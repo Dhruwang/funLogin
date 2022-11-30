@@ -39,8 +39,11 @@ export default function Login() {
             <div className='container '>
                 <div className='wrapper d-flex justify-content-center align-items-center'>
                     <form className='w-25 '>
-                        <h2>Login</h2>
+                        <h2 className='mx-auto'>LOGIN</h2>
+                        <div className='text-center'>
                         <img src={img} height='100px' width="100px"></img>
+                        </div>
+                        
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
