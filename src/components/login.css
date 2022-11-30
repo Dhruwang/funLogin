@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(0, 153, 255);
+}
+.wrapper{
+    height: 100vh;
+    
+}
+form{
+    background-color: white;
+    opacity: 0.8;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.hide{
+opacity: 0;
+}
+
+
