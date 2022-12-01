@@ -15,4 +15,7 @@ form{
 opacity: 0;
 }
 
-
+#passLenAlert{
+    color: white;
+    font-size: smaller;
+}

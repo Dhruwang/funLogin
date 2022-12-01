@@ -9,8 +9,15 @@ export default function Login() {
     const [img, setimg] = useState(eyes_open)
     let btn1 = document.getElementById('btn1')
     let btn2 = document.getElementById('btn2')
+    let passAlert = document.getElementById('passLenAlert')
     const handleOnChange =(event)=>{
         setpassword(event.target.value)
+        if(password.length<9){
+            passAlert.style.color = 'red';
+        }
+        else{
+            passAlert.style.color = 'white';
+        }
     }
     const handleOnClick=()=>{
         setimg(eyes_close)
@@ -51,6 +58,7 @@ export default function Login() {
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" onChange={handleOnChange} onClick={handleOnClick} id="exampleInputPassword1" />
+                            <p id='passLenAlert'>password should be more than 8 characters</p>
                         </div>
                         <button type="submit" id='btn1' onMouseOver={handleOnMouseOver1} class="btn btn-primary ">Submit</button>
                         <button type="submit" id='btn2' onMouseOver={handleOnMouseOver2} class="btn btn-primary mx-2 hide">Submit</button>
